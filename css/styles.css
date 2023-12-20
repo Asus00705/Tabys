@@ -1,33 +1,4 @@
-/* Template: Juno - Multipurpose Landing Page Pack
-   Author: InovatikThemes
-   Created: Mar 2019
-   Description: Master CSS file
-*/
 
-/*****************************************
-Table Of Contents:
-
-01. General Styles
-02. Preloader
-03. Navigation
-04. Header
-05. Features
-******************************************/
-
-/*****************************************
-Colors:
-
-- Text, navbar links - white #f1f1f8
-- Buttons, bullets, icons - turquoise #00c9db
-- Navbar - navy #4633af
-- Backgrounds - dark denim #262431
-- Backgrounds - denim #2f2c3d
-******************************************/
-
-
-/******************************/
-/*     01. General Styles     */
-/******************************/
 body,
 html {
     width: 100%;
@@ -1307,18 +1278,54 @@ input[type='checkbox'] {
 	margin-bottom: 2rem;
 }
 
+#counter {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+    text-align: center; /* Center text within the container */
+}
+
 .counter #counter .counter-value {
-	color: #f1f1f8;
-	font: 700 3.5rem/4.25rem "Montserrat", sans-serif;	
-	vertical-align: middle;
+    color: #f1f1f8;
+    font: 700 2rem/2.5rem "Montserrat", sans-serif; /* Adjusted font size */
+    margin-right: 10px; /* Adjust spacing between elements as needed */
 }
 
 .counter #counter .counter-info {
-	margin-bottom: 0;
-	color: #00c9db;
-	font: 400 0.875rem/1.25rem "Open Sans", sans-serif;
-	vertical-align: middle;
+    color: #00c9db;
+    font: 600 0.75rem/1rem "Open Sans", sans-serif; /* Adjusted font size */
 }
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 600px) {
+    #counter {
+        flex-direction: column; /* Stack elements on smaller screens */
+    }
+
+    .counter #counter .counter-value,
+    .counter #counter .counter-info {
+        margin-right: 0; /* Remove margin on smaller screens */
+    }
+}
+
+
+.counter #counter .counter-info {
+    margin-bottom: 0;
+    color: #00c9db;
+    font: 600 0.75rem/1rem "Open Sans", sans-serif; /* Adjusted font size */
+    vertical-align: middle;
+}
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 600px) {
+    .counter #counter .counter-info {
+        font-size: 0.65rem; /* Further reduce font size for smaller screens if needed */
+        display: block; /* Stack elements on smaller screens */
+        text-align: center; /* Center text on smaller screens */
+        margin-bottom: 5px; /* Add some margin for spacing on smaller screens */
+    }
+}
+
 
 
 /***********************/
@@ -1905,7 +1912,7 @@ a:hover.back-to-top {
 	}
 	
 	.counter #counter .counter-value {
-		font: 700 4.25rem/4.5rem "Montserrat", sans-serif;	
+		font: 700 2.25rem/4.5rem "Montserrat", sans-serif;	
 	}
 	/* end of statistics */
 

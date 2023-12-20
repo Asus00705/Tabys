@@ -1,8 +1,4 @@
-/* Template: Juno - Multipurpose Landing Page Pack
-   Author: InovatikThemes
-   Created: Mar 2019
-   Description: Custom JS file
-*/
+//
 
 
 (function($) {
