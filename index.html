@@ -602,51 +602,52 @@
 
 
     <!-- Contact -->
-    <div id="contact" class="form">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>Контакт</h2>
-                    <ul class="list-unstyled li-space-lg">
-                        <li class="address">Оставьте свои данные. Наши операторы с вами свжутся в ближайщие время</li>
-                        <li><i class="fas fa-map-marker-alt"></i>город Астана</li>
-                        <li><i class="fas fa-envelope"></i><a class="blue" href="mailto:office@leno.com">tabys_taxi@mail.ru</a></li>
-                    </ul>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-6 offset-lg-3">
-                    
-                    <!-- Contact Form -->
-                    <form action="process_form.php" method="post" id="contactForm" data-toggle="validator" data-focus="false">
-                        <div class="form-group">
-                            <input type="text" class="form-control-input" id="cname" required>
-                            <label class="label-control" for="cname">Имя</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <input type="phone" class="form-control-input" id="сphone" required>
-                            <label class="label-control" for="сphone">Мобильный телефон</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
-                            <label class="label-control" for="cmessage">Ваше сообщение</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">ОТПРАВИТЬ</button>
-                        </div>
-                        <div class="form-message">
-                            <div id="cmsgSubmit" class="h3 text-center hidden"></div>
-                        </div>
-                    </form>
-                    <!-- end of contact form -->
+<div id="contact" class="form">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Контакт</h2>
+                <ul class="list-unstyled li-space-lg">
+                    <li class="address">Оставьте свои данные. Наши операторы с вами свяжутся в ближайшее время</li>
+                    <li><i class="fas fa-map-marker-alt"></i>город Астана</li>
+                    <li><i class="fas fa-envelope"></i><a class="blue" href="mailto:tabys_taxi@mail.ru">tabys_taxi@mail.ru</a></li>
+                </ul>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
 
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of form -->
+                <!-- Contact Form -->
+                <form action="process_form.php" method="post" id="contactForm" data-toggle="validator" data-focus="false">
+                    <div class="form-group">
+                        <input type="text" class="form-control-input" id="cname" name="cname" required>
+                        <label class="label-control" for="cname">Имя</label>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" class="form-control-input" id="сphone" name="cphone" required>
+                        <label class="label-control" for="сphone">Мобильный телефон</label>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control-textarea" id="cmessage" name="cmessage" required></textarea>
+                        <label class="label-control" for="cmessage">Ваше сообщение</label>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="form-control-submit-button">ОТПРАВИТЬ</button>
+                    </div>
+                    <div class="form-message">
+                        <div id="cmsgSubmit" class="h3 text-center hidden"></div>
+                    </div>
+                </form>
+                <!-- end of contact form -->
+
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of form -->
+
     <!-- end of contact -->
 
 
