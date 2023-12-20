@@ -1,6 +1,6 @@
 <?php
 $telegramBotToken = '6868336670:AAEc7e1oZlmBE_hmo-57WAEc2wWxbaQjxj4';
-$chatId = '6868336670';
+$chatId = '-4007661050';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name = $_POST['cname'];
